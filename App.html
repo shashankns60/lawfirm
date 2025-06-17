@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Development Packages</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        .package-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .package-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-cta {
+            background: linear-gradient(to right, #6EC1E4, #3B82F6);
+        }
+
+        .btn-cta:hover {
+            background: linear-gradient(to right, #3B82F6, #6EC1E4);
+        }
+    </style>
+</head>
+
+<body class="p-4 md:p-8">
+
+    <!-- Header -->
+    <header class="flex flex-col md:flex-row justify-between items-center bg-white p-6 rounded-xl shadow-md mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:mb-0">Choose Your Perfect App Development
+            Package</h1>
+        <div class="flex items-center space-x-6">
+            <img src="https://placehold.co/80x40/6EC1E4/ffffff?text=Logo" class="h-10 w-auto rounded" alt="Logo">
+            <p class="text-gray-600 text-lg">Contact: <span class="font-medium">info@example.com</span></p>
+        </div>
+    </header>
+
+    <!-- Packages Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <!-- Silver -->
+        <div class="package-card bg-white p-8 rounded-xl shadow-lg border-t-8 border-blue-400 text-center">
+            <div class="text-5xl mb-4 text-blue-400"><i class="fas fa-coins"></i></div>
+            <h2 class="text-3xl font-bold text-gray-800 mb-2">Silver Package</h2>
+            <p class="text-4xl font-extrabold text-gray-900 mb-4">$2,999</p>
+            <p class="text-gray-600 mb-6 font-medium">Best For: <span class="font-semibold text-blue-600">Startups,
+                    MVPs</span></p>
+            <h3 class="text-xl font-semibold border-b-2 border-gray-200 pb-2 mb-3">Key Features:</h3>
+            <ul class="text-left space-y-2 max-w-xs mx-auto mb-6">
+                <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Firebase Backend</li>
+                <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Basic Admin Panel</li>
+                <li><i class="fas fa-check-circle text-green-500 mr-2"></i> 1-Month Support</li>
+            </ul>
+            <h3 class="text-xl font-semibold border-b-2 border-gray-200 pb-2 mb-3">Add-Ons:</h3>
+            <ul class="text-left space-y-2 max-w-xs mx-auto">
+                <li><i class="fas fa-plus-circle text-purple-500 mr-2"></i> Social Logins (+$199)</li>
+                <li><i class="fas fa-plus-circle text-purple-500 mr-2"></i> Dark Mode (+$149)</li>
+            </ul>
+        </div>
+
+        <!-- Gold -->
+        <div class="package-card bg-white p-8 rounded-xl shadow-lg border-t-8 border-yellow-400 text-center">
+            <div class="text-5xl mb-4 text-yellow-500"><i class="fas fa-gem"></i></div>
+            <h2 class="text-3xl font-bold text-gray-800 mb-2">Gold Package</h2>
+            <p class="text-4xl font-extrabold text-gray-900 mb-4">$4,999</p>
+            <p class="text-gray-600 mb-6 font-medium">Best For: <span class="font-semibold text-yellow-600">Scalable
+                    Businesses</span></p>
+            <h3 class="text-xl font-semibold border-b-2 border-gray-200 pb-2 mb-3">Key Features:</h3>
+            <ul class="text-left space-y-2 max-w-xs mx-auto mb-6">
+                <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Node.js + MongoDB</li>
+                <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Custom Admin Dashboard</li>
+                <li><i class="fas fa-check-circle text-green-500 mr-2"></i> 2-Month Support</li>
+            </ul>
+            <h3 class="text-xl font-semibold border-b-2 border-gray-200 pb-2 mb-3">Add-Ons:</h3>
+            <ul class="text-left space-y-2 max-w-xs mx-auto">
+                <li><i class="fas fa-plus-circle text-purple-500 mr-2"></i> AI Chatbot (+$499)</li>
+                <li><i class="fas fa-plus-circle text-purple-500 mr-2"></i> White Label (+$1,499)</li>
+            </ul>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="package-card bg-white p-8 rounded-xl shadow-lg border-t-8 border-indigo-600 text-center">
+            <div class="text-5xl mb-4 text-indigo-600"><i class="fas fa-rocket"></i></div>
+            <h2 class="text-3xl font-bold text-gray-800 mb-2">Enterprise</h2>
+            <p class="text-4xl font-extrabold text-gray-900 mb-4">Custom Pricing</p>
+            <p class="text-gray-600 mb-6 font-medium">Best For: <span class="font-semibold text-indigo-800">Fortune 500,
+                    Web3</span></p>
+            <h3 class="text-xl font-semibold border-b-2 border-gray-200 pb-2 mb-3">Key Features:</h3>
+            <ul class="text-left space-y-2 max-w-xs mx-auto mb-6">
+                <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Microservices</li>
+                <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Blockchain Ready</li>
+                <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Dedicated DevOps</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Feature Comparison Table -->
+    <section class="bg-white p-6 rounded-xl shadow-md overflow-x-auto mb-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Feature Comparison</h2>
+        <table class="min-w-[900px] w-full text-sm md:text-base text-left border border-gray-200">
+            <thead class="bg-gray-100 text-gray-700 font-semibold">
+                <tr>
+                    <th class="p-3 border">Feature</th>
+                    <th class="p-3 border">Description</th>
+                    <th class="p-3 border">Silver Package</th>
+                    <th class="p-3 border">Gold Package</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-t">
+                    <td class="p-3 border">Platforms</td>
+                    <td class="p-3 border">Supported OS</td>
+                    <td class="p-3 border">Android & iOS</td>
+                    <td class="p-3 border">Android & iOS</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">UI/UX Design</td>
+                    <td class="p-3 border">Design quality</td>
+                    <td class="p-3 border">Custom UI</td>
+                    <td class="p-3 border">Premium UI + Animations</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Development</td>
+                    <td class="p-3 border">App Framework</td>
+                    <td class="p-3 border">React Native</td>
+                    <td class="p-3 border">React Native</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Backend</td>
+                    <td class="p-3 border">App Logic & DB</td>
+                    <td class="p-3 border">Firebase</td>
+                    <td class="p-3 border">Node.js + MongoDB/PostgreSQL</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Authentication</td>
+                    <td class="p-3 border">Login Methods</td>
+                    <td class="p-3 border">Email/Phone</td>
+                    <td class="p-3 border">+ Social Logins</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Push Notifications</td>
+                    <td class="p-3 border">Alert System</td>
+                    <td class="p-3 border">Firebase</td>
+                    <td class="p-3 border">FCM/APNs</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Payment Integration</td>
+                    <td class="p-3 border">Gateways</td>
+                    <td class="p-3 border">Stripe/Razorpay</td>
+                    <td class="p-3 border">Stripe, Razorpay, PayPal</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Admin Panel</td>
+                    <td class="p-3 border">Control Panel</td>
+                    <td class="p-3 border">Basic Firebase</td>
+                    <td class="p-3 border">Custom Dashboard</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Bug Fixes</td>
+                    <td class="p-3 border">Free Support</td>
+                    <td class="p-3 border">1 Month</td>
+                    <td class="p-3 border">2 Months</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Documentation 🆕</td>
+                    <td class="p-3 border">Project Guide</td>
+                    <td class="p-3 border text-orange-500">Standard – Add screenshots</td>
+                    <td class="p-3 border">Full with training</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Analytics Dashboard 🆕</td>
+                    <td class="p-3 border">Usage Insights</td>
+                    <td class="p-3 border text-orange-500">❌ Add Firebase Analytics</td>
+                    <td class="p-3 border">✅ Custom Analytics</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Chat Support 🆕</td>
+                    <td class="p-3 border">In-app Chat</td>
+                    <td class="p-3 border text-orange-500">❌ Optional (Firebase/Zendesk)</td>
+                    <td class="p-3 border">✅ Real-time Chat</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Multi-language 🆕</td>
+                    <td class="p-3 border">Localization</td>
+                    <td class="p-3 border text-orange-500">❌ Add on request</td>
+                    <td class="p-3 border">✅ Built-in</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Role-based Access 🆕</td>
+                    <td class="p-3 border">Permission Control</td>
+                    <td class="p-3 border text-orange-500">❌ Optional Access Control</td>
+                    <td class="p-3 border">✅ Advanced Roles</td>
+                </tr>
+                <tr>
+                    <td class="p-3 border">Data Backup 🆕</td>
+                    <td class="p-3 border">Storage Recovery</td>
+                    <td class="p-3 border text-orange-500">❌ Schedule via Firebase</td>
+                    <td class="p-3 border">✅ Automated Backup</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer class="flex flex-col md:flex-row justify-between items-center bg-white p-6 rounded-xl shadow-md">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-0">Ready to Build? Contact Us Today!</h2>
+        <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+            <button class="btn-cta text-white font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl">Get a Custom
+                Quote!</button>
+            <p class="text-gray-600 text-lg"><i class="fas fa-phone mr-2 text-blue-500"></i> +1 (123) 456-7890</p>
+            <p class="text-gray-600 text-lg"><i class="fas fa-envelope mr-2 text-blue-500"></i> contact@example.com</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
