@@ -2,7 +2,7 @@
 
     Theme Name: Lawyer - Attorney and Lawyers HTML Template
     Description: Attorney and Lawyers HTML Template
-    Author: Zolto Technologies
+    Author: Legal Vires
     Version: 1.0    
                 
     ---------------------------------- */
