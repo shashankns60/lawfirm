@@ -242,7 +242,8 @@
                                     <div class="attr-nav align-items-xl-center ms-xl-auto main-font">
                                         <ul>
                                             <li class="d-none d-xl-inline-block">
-                                                <a href="https://wa.me/1234567890" target="_blank" class="butn md text-white vibrate-animation">
+                                                <a href="https://wa.me/1234567890" target="_blank"
+                                                    class="butn md text-white vibrate-animation">
                                                     <i class="fab fa-whatsapp me-2"></i>
                                                     Free Consultation
                                                 </a>
@@ -250,20 +251,39 @@
                                         </ul>
                                     </div>
                                     <style>
-                                    @keyframes vibrate {
-                                        0% { transform: translate(0); }
-                                        20% { transform: translate(-2px, 2px); }
-                                        40% { transform: translate(-2px, -2px); }
-                                        60% { transform: translate(2px, 2px); }
-                                        80% { transform: translate(2px, -2px); }
-                                        100% { transform: translate(0); }
-                                    }
-                                    .vibrate-animation {
-                                        animation: vibrate 0.3s linear infinite;
-                                    }
-                                    .vibrate-animation:hover {
-                                        animation: none;
-                                    }
+                                        @keyframes vibrate {
+                                            0% {
+                                                transform: translate(0);
+                                            }
+
+                                            20% {
+                                                transform: translate(-2px, 2px);
+                                            }
+
+                                            40% {
+                                                transform: translate(-2px, -2px);
+                                            }
+
+                                            60% {
+                                                transform: translate(2px, 2px);
+                                            }
+
+                                            80% {
+                                                transform: translate(2px, -2px);
+                                            }
+
+                                            100% {
+                                                transform: translate(0);
+                                            }
+                                        }
+
+                                        .vibrate-animation {
+                                            animation: vibrate 0.3s linear infinite;
+                                        }
+
+                                        .vibrate-animation:hover {
+                                            animation: none;
+                                        }
                                     </style>
                                     <!-- end attribute navigation -->
                                 </nav>
@@ -329,6 +349,73 @@
             </div>
         </div>
 
+        <!-- Modal -->
+
+
+        <!-- Vertically centered -->
+        <div class="modal fade mt-3" id="centered" tabindex="-1" aria-labelledby="centeredLabel" aria-hidden="true"
+            data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 700px;">
+                <div class="modal-content"
+                    style="border-radius: px; box-shadow: 0 8px 32px rgba(0,0,0,0.18); border: none;">
+                    <div class="modal-header" style="background: #ffc107; color: #fff; border-top-left-radius: px; border-top-right-radius: px;">
+                        <h5 class="modal-title" id="centeredLabel" style="font-weight: 700; letter-spacing: 1px;">
+                            <i class="fas fa-exclamation-triangle text-warning me-2"></i>DISCLAIMER
+                        </h5>
+                        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="background: #f8f9fa;">
+                        <p style="font-size: 1rem; color: #333; line-height: 1.7;">
+                            In accordance with the regulations of the Bar Council of India, this website of
+                            <strong>Legal Vires</strong> is
+                            intended solely to provide general information regarding the firm, its areas of practice,
+                            and
+                            its legal professionals. It is not designed to advertise, solicit clients, or offer any form
+                            of
+                            inducement. Nothing contained on this website should be interpreted as legal advice or a
+                            substitute for legal consultation.
+                        </p>
+                        <p style="font-size: 1rem; color: #333; line-height: 1.7;">
+                            All content available on this website is the intellectual property of Legal Vires.
+                        </p>
+                        <p style="font-size: 1rem; color: #333; line-height: 1.7;">
+                            We request you to review and accept our <a href="#"
+                                style="color: #e1a122; text-decoration: underline;">Terms of Use</a> and <a href="#"
+                                style="color: #e1a122; text-decoration: underline;">Privacy Policy</a>. By clicking ‘I
+                            AGREE’
+                            below, you confirm that your access to this site is for informational purposes only and that
+                            you
+                            are seeking knowledge about Legal Vires and its professional activities on your own accord.
+                        </p>
+                    </div>
+                    <div class="modal-footer"
+                        style="background: #f8f9fa; border-bottom-left-radius: 16px; border-bottom-right-radius: 16px;">
+                        <button type="button" class="butn butn-white butn-hover" data-bs-dismiss="modal"
+                            style="font-weight: 600; cursor: pointer;">I AGREE</button>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            @media (max-width: 767.98px) {
+                #centered .modal-dialog {
+                    max-width: 95vw !important;
+                }
+            }
+        </style>
+        <script>
+            window.addEventListener('DOMContentLoaded', function () {
+                setTimeout(function () {
+                    var modal = new bootstrap.Modal(document.getElementById('centered'));
+                    modal.show();
+                }, 3000);
+            });
+        </script>
+
+        <!-- End of modal -->
+
         <!-- ABOUTUS
         ================================================== -->
         <section class="about-style1">
@@ -338,12 +425,12 @@
                         <div class="position-relative">
                             <div
                                 class="position-relative z-index-1 py-2-9 py-xl-7 px-1-6 px-md-2-9 px-lg-2-5 px-xl-2-9">
-                                <img src="img/content/about-007.jpg" alt="...">
+                                <img src="img/content/about-077.png" alt="...">
                             </div>
                             <span class="position-absolute top-0 start-0 z-index-0"><img
                                     src="img/content/bg-pattern.png" alt="..."></span>
                             <div class="about-counter">
-                                <h4 class="countup">20</h4>
+                                <h4 class="countup">10</h4>
                                 <span class="fs-5 font-weight-500">Years Of Experience</span>
                             </div>
                         </div>
